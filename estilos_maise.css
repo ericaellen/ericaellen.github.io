@@ -1,0 +1,71 @@
+/* todo MARGENS DO CONTAINER */
+.container-categoria {
+    padding-left: 100px;
+    padding-right: 100px; 
+    
+}
+
+html, body {
+    /*overflow-x: hidden;*/
+    width: 100%;
+    border: 0;
+    margin: 0%;
+} 
+
+
+h1 { /* todo TITULO PRINCIPAL "CATEGORIAS" */
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800; /* ExtraBold */
+    color: #EFAAC4;
+    font-size: 48px; /* ajustavel */
+    text-align: center; /* centraliza */
+    margin-top: 20px; /* opcional, só pra dar espaço */
+}
+
+.categoria-item { /* todo CLASSE P/ AS CATEGORIAS */
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400; /* regular */
+    color: #000000;
+    font-size: 20px; /* ajustável — só sugerido */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* espaço entre o texto e a seta */
+    margin-bottom: 20px; /* espaço abaixo */
+}
+
+.categoria-fotos { /* todo CATEGORIA P/ AS FOTOS */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* todo MOLDURA */
+.foto-box {
+    width: 295px;               /* tamanho do quadrado */
+    height: 298px;
+    border-radius: 20px;        /* bordas arredondadas */
+    overflow: hidden;           /* impede a imagem de vazar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0EEED;  /* cor de fundo da moldura */
+}
+
+/* Ajuste da imagem dentro da moldura */
+.foto-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* garante que a imagem preencha sem distorcer */
+}
+
+
+
+p { /* todo CAMINHO "inicio -> categorias" */
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400; /*regular*/
+    color: rgba(0, 0, 0, 0.6);
+
+
+}
+
