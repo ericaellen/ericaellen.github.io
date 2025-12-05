@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--Fonte Abhaya Libre-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!--Incluindo css bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!--Fonte de ícones do Google-->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
+
+<link rel="stylesheet" href="estilos_ellen.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--Oferta acima do menu-->
+        <div id="oferta-header">
+            <div class="container-md text-center">
+                <p class="m-0 py-0"> <!--margem 0 e padding 8px-->
+                    Obtenha 20% de desconto na semana do consumidor com produtos selecionados. Aproveite! 
+                </p>
+            </div>
+        </div>
+        
+        <!--Adaptação bootstrap para a navbar do menu, com responsividade-->
+        <div class="container-fluid menu">
+            <div class="container-md d-flex justify-content-center align-items-center">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-center py-3">
+                    <!--logo-->
+                    <img src="Imagens/logo cortada.png" alt="logotipo da loja" class="navbar-brand logotipo"><!--Imagem logo-->
+                    </img>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Masculino</a></li>
+            <li><a class="dropdown-item" href="#">Feminino</a></li>
+            <li><a class="dropdown-item" href="#">Infantil</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+                
+
+            
+                <nav class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <!--Aria current: recurso de acessibilidade que diz qual pagina é a atual-->
+                    <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Início</a></li>
+
+                    <li class="nav-item">
+                        <a href="categorias.html" class="nav-link">Categorias
+                            <button class="button-md"> <!--botão e icone de categorias-->
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                    
+                    <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+
+                    <li>
+                            <div class="caixa-busca textos-simbolos">
+                            <button> <!--Botao de pesquisa-->
+                                <span class="material-symbols-outlined"> 
+                                    search<!--Ícone de pesquisa-->
+                                </span>
+                            </button>
+                            <!--Input dá o tipo de entrada-->
+                            <!--Placeholder é o texto que some ao digitar-->
+                            <input type="text" id="texto-busca" placeholder="Pesquise por produtos">
+                            </input>
+                        </div>
+                    </li>
+                    
+                    <!--Icone de carrinho-->
+                    <li class="nav-item"><a href="carrinho.html" class="nav-link"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                    
+                    <!--Icone de login-->
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-outlined">account_circle</span></a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!--Incluindo javascript bootstrap-->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

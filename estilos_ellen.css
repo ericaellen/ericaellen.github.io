@@ -1,125 +1,121 @@
 /*ELEMENTOS DO BODY NO GERAL*/
 /*Para o conteúdo ocupar toda largura da tela*/
-html, body {
+/* html, body {
     margin: 0;
     padding: 0;
     width: 100%
-}
+} */
 
 /*Fonte da página */
 body {
     font-family: "Abhaya Libre", serif;
 }
 
-/*linkáveis*/
-a {
+/*formatação dos linkáveis no header*/
+header .nav-link {
     color: #FFFF; 
-    text-decoration: none; /*remove sublinhado*/
 }
 
-/*botões*/
-button {
-    color: #FFFF;
-    background-color: transparent;
-    border: none;
+/*formatação dos linkáveis no header, quando passa o mouse*/
+header .nav-link:hover {
+    color: rgba(255, 255, 255, 0.732); 
 }
 
 /*ESTILIZAÇÃO DE ELEMENTOS PRINCIPAIS - HEADER*/
 /*header com oferta e menu */
 header {
-    display: flex; /*layout flexivel */
-    flex-direction: column; /*direção do display, para a promo ficar
-    logo acima do menu */
-    justify-content: center; /*deixa elementos no centro*/
-    height: auto; 
-    width: 100%;
     font-size: 24px; /*tamanho da fonte */
     color: #FFFF;
     text-decoration: none; /*remove sublinhado dos linkáveis*/
     background-color: #FFC4D1;
 }
 
-/*Força o input e linkaveis a herdar a mesma
+/*Força o input a herdar a mesma
 tipografia do header
 pois input vem com formatacao padrao do navegador*/
 header input {
   font-family: inherit;
 }
 
-/*classe para o fundo verde ocupar toda largura */
-.oferta-header {
+/*id para o fundo verde ocupar toda largura e configs basicas*/
+#oferta-header {
     background-color: #A0E166;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/*id para a oferta do header*/
-#promocao-header {
-    display: flex;
-    height: 15px;
-    justify-content: center; /* centraliza no meio */
-    align-items: center; /* centraliza verticalmente */
     font-size: 20px;
-    padding: 8px 0px; /*espaçamento em cima e embaixo*/
-    width: 65%; 
+    width: 100%; 
 }
 
 /*estilização do menu*/
-.menu {
+/*.menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; /*impede quebra de linha*/
+    justify-content: space-between;
+} */
+
+/*estlização dos navegaveis do menu - NAO PRECISEI USAR MAIS, DEVIDO
+AO BOOTSTRAP*/
+/*.menu nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center; /*centraliza conteudo */
-    width: 65%;
-    margin: 0 auto; /*centraliza horizontalmente */
-    height: auto;
-    gap: 8px; /*espaçamento entre elementos*/
-}
+} */
 
 /*proporções do logotipo*/
 .logotipo {
     height: 65px; /*altura logo*/
     width: auto;
+    padding: 8px 16px;
 }
 
 /*ESTILIZAÇÃO DE SIMBOLOS & TEXTOS DO HEADER*/
 /*tamanho símbolos do google no header*/
 header .material-symbols-outlined {
-    font-size: 23px;
+    font-size: 21px;
 }
 
 /*alinhamento de texto + símbolos do google no geral no header*/
-.textos-simbolos {
+header .textos-simbolos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
-}
+} 
 
-/*estlização do texto dentro da caixa de busca*/
-.texto-busca {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.805);
+/*estilização de botoes dentro do header */
+header button {
+    padding: 0px 0px 0px 0px;
+    color: #FFFF;
     background-color: transparent;
     border: none;
 }
 
+/*estlização do texto dentro da caixa de busca*/
+#texto-busca {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    outline: none; /* remove a borda ao clicar */
+    width: 100%;
+}
+
 /*estilização do texto EM FOCO (ativo)*/
-.texto-busca:focus {
+#texto-busca:focus {
     outline: none; /*remove linha ao redor do elemento*/
+}
+
+#texto-busca::placeholder {
+    color: rgba(255, 255, 255, 0.774);
 }
 
 /*estlização caixa de busca*/
 .caixa-busca {
     background-color: #A0E166;
     border-radius: 62px; /*arredonda bordas */
-    padding: 8px 30px 8px 8px;
+    padding: 4px 40px 0px 16px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 25%;
     gap: 8px;
 }
 
